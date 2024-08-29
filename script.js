@@ -1,56 +1,43 @@
-console.log('JS OK');
+// -------------------- SNACK 1 ---------------------
 
-const cars = [
+
+
+// -------------------- SNACK 2 ---------------------
+
+const students = [
     {
-        marca: 'Alfa Romeo',
-        modello: 'Giulietta',
-        alimentazione: 'benzina',
+        id: '213',
+        name: 'Marco della Rovere',
+        grades: '78',
     },
     {
-        marca: 'FIAT',
-        modello: 'Doblò',
-        alimentazione: 'diesel',
+        id: '110',
+        name: 'Paola Cortellessa',
+        grades: '96',
     },
     {
-        marca: 'FIAT',
-        modello: 'Panda',
-        alimentazione: 'benzina',
+        id: '250',
+        name: 'Andrea Mantegna',
+        grades: '48',
     },
     {
-        marca: 'FIAT',
-        modello: 'Fiorino',
-        alimentazione: 'metano',
+        id: '145',
+        name: 'Gaia Borromini ',
+        grades: '74',
     },
     {
-        marca: 'Ford',
-        modello: 'Fiesta',
-        alimentazione: 'diesel',
+        id: '196',
+        name: 'Luigi Grimaldello',
+        grades: '68',
     },
     {
-        marca: 'Ford',
-        modello: 'Ka',
-        alimentazione: 'gpl',
+        id: '102',
+        name: 'Piero della Francesca',
+        grades: '50',
     },
     {
-        marca: 'Smart',
-        modello: 'Smart',
-        alimentazione: 'elettrico',
+        id: '120',
+        name: 'Francesca da Polenta',
+        grades: '84',
     },
 ];
-
-
-
-const petrolCars = cars.filter(car => car.alimentazione === 'benzina');
-console.log(petrolCars);
-
-const dieselCars = cars.filter(car => car.alimentazione === 'diesel');
-console.log(dieselCars);
-
-const gplCars = cars.filter(car => car.alimentazione === 'gpl');
-console.log(gplCars);
-
-const electricCars = cars.filter(car => car.alimentazione === 'elettrico');
-console.log(electricCars);
-
-const gasCars = cars.filter(car => car.alimentazione === 'gas');
-console.log(gasCars);
