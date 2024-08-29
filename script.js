@@ -60,8 +60,30 @@ const guests = [
     }
 ];
 
+// Creo una funzione che genera numeri casuali sempre diversi
+const createRandomNumbers = (max, totalNumbers) => {
+    const randomNumbers = [];
 
+    // Ciclo while poiché dovrò pescare più volte il numero casuale per non avere doppioni
+    while (randomNumbers.length < totalNumbers) {
+        const randomNumber = Math.floor(Math.random() * max) + 1;
 
+        // Controllo se il numero creato è già nell'array. Se si, genero altri numeri
+        if (!randomNumbers.includes(randomNumber)) {
+            randomNumbers.push(randomNumber);
+        }
+    }
+    return randomNumbers;
+}
+
+const seatNumber = createRandomNumbers(11, 11);
+console.log(seatNumber);
+
+const placeholder = guests.forEach(chair => {
+    chair.seatOccupied.push(randomNumbers);
+})
+
+console.log(segnaposto);
 
 
 // ! -------------------- SNACK 2 ----------------------
