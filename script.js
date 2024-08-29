@@ -79,11 +79,15 @@ const createRandomNumbers = (max, totalNumbers) => {
 const seatNumber = createRandomNumbers(11, 11);
 console.log(seatNumber);
 
-const placeholder = guests.forEach(chair => {
-    chair.seatOccupied.push(randomNumbers);
+
+let i = 1;
+
+const placeholder = guests.forEach(seat => {
+    seat.seatOccupied = seatNumber[i];
+    i++;
 })
 
-console.log(segnaposto);
+console.log(guests);
 
 
 // ! -------------------- SNACK 2 ----------------------
