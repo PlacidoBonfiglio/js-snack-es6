@@ -1,4 +1,16 @@
 // -------------------- SNACK 1 ---------------------
+[
+    'Brad Pitt',
+    'Johnny Depp',
+    'Lady Gaga',
+    'Cristiano Ronaldo',
+    'Georgina Rodriguez',
+    'Chiara Ferragni',
+    'George Clooney',
+    'Amal Clooney', 'Fedez',
+    'Amadeus',
+    'Fiorello'
+]
 
 
 
@@ -42,15 +54,14 @@ const students = [
     },
 ];
 
-
+// Raccolgo tutti i nomi nell'array di oggetti e li stampo in console in maiuscolo
 const newCourse = students.map(studentName => studentName.name.toUpperCase());
-console.log(newCourse);
+console.log('Students names', newCourse);
 
+// Filtro tutti gli studenti con la somma dei voti superiore a 70
 const gradesOver70 = students.filter(studentGrade => studentGrade.grades > 70);
-console.log(gradesOver70);
+console.log('Grades Over 70', gradesOver70);
 
-const gradeIdList = students.filter((studentGrade, studentId) => {
-    if (studentGrade > 70 && studentId > 120);
-});
-
-console.log('new course: ', (newCourse), 'grades over 70: ', (gradesOver70), 'grades over 70 & id over 120: ', (gradeIdList));
+// Controllo se gli studenti con grades over 70 hanno anche un id superiore a 120
+const gradesOver70IdOver120 = gradesOver70.filter(studentId => studentId.id > 120);
+console.log('Students grades over 70 and id over 120', gradesOver70IdOver120);
