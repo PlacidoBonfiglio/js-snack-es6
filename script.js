@@ -49,3 +49,8 @@ console.log(newCourse);
 const gradesOver70 = students.filter(studentGrade => studentGrade.grades > 70);
 console.log(gradesOver70);
 
+const gradeIdList = students.filter((studentGrade, studentId) => {
+    if (studentGrade > 70 && studentId > 120);
+});
+
+console.log('new course: ', (newCourse), 'grades over 70: ', (gradesOver70), 'grades over 70 & id over 120: ', (gradeIdList));
