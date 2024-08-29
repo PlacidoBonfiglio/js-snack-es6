@@ -1,20 +1,72 @@
-// -------------------- SNACK 1 ---------------------
-[
-    'Brad Pitt',
-    'Johnny Depp',
-    'Lady Gaga',
-    'Cristiano Ronaldo',
-    'Georgina Rodriguez',
-    'Chiara Ferragni',
-    'George Clooney',
-    'Amal Clooney', 'Fedez',
-    'Amadeus',
-    'Fiorello'
-]
+// ! -------------------- SNACK 1 ----------------------
+
+console.log('-----------  SNACK 1  ------------');
+
+const guests = [
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Brad Pitt',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Johnny Depp',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Lady Gaga',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Cristiano Ronaldo',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Georgina Rodriguez',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Chiara Ferragni',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'George Clooney',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Amal Clooney',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Fedez',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Amadeus',
+        seatOccupied: 0,
+    },
+    {
+        tableName: 'Tavolo Vip',
+        name: 'Fiorello',
+        seatOccupied: 0,
+    }
+];
 
 
 
-// -------------------- SNACK 2 ---------------------
+
+
+// ! -------------------- SNACK 2 ----------------------
+
+console.log('-----------  SNACK 2  ------------');
 
 const students = [
     {
