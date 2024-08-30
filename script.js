@@ -83,19 +83,33 @@ console.log('-----------------  SNACK 3  ------------------');
 
 const bicycles = [
     {
-        name: Bianchi,
-        weight: 6,
-    },
-    {
-        name: Atala,
+        id: 1,
+        name: 'Bianchi',
         weight: 8,
     },
     {
-        name: Olmo,
+        id: 2,
+        name: 'Atala',
+        weight: 6,
+    },
+    {
+        id: 3,
+        name: 'Olmo',
         weight: 9,
     },
     {
-        name: Cervelo,
+        id: 4,
+        name: 'Cervelo',
         weight: 7,
     }
 ];
+
+// Prendo il peso di ogni bicicletta
+const bicycleWeight = bicycles.map((bike) => bike.weight);
+console.log('Bicycle weight', bicycleWeight);
+
+// Controllo quale sia 
+const lighterBicycle = Math.min(...bicycleWeight);
+console.log(lighterBicycle);
+
+// Stampare in console la bici con peso minore utilizzando destructuring e template literal
