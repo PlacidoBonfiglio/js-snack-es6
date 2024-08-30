@@ -145,10 +145,10 @@ const randomNumbers = (max) => {
     return numbers;
 }
 
-// const guestsList = guests.map((guest, i) => ({ guest, table, place: i + 1 }));
-
+// Do alla key "score" un valore corrispondente al numero casuale
 const actualScore = footballTeams.map(teamScore => teamScore.score = randomNumbers(100));
 
+// Do alla key "fails" un valore corrispondente al numero casuale
 const actualFails = footballTeams.map(teamFails => teamFails.fails = randomNumbers(15));
 
 console.log(footballTeams);
