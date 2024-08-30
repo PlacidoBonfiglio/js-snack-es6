@@ -150,5 +150,11 @@ const actualScore = footballTeams.map(teamScore => teamScore.score = randomNumbe
 
 // Do alla key "fails" un valore corrispondente al numero casuale
 const actualFails = footballTeams.map(teamFails => teamFails.fails = randomNumbers(15));
-
 console.log(footballTeams);
+
+const teamsAndFails = footballTeams.reduce((result, team) => {
+    result += team.name.concat(team.fails)
+    return result
+}, []);
+console.log(teamsAndFails);
+
