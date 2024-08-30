@@ -119,22 +119,36 @@ console.log('-----------------  SNACK 4  ------------------');
 const footballTeams = [
     {
         name: 'Roma',
-        points: 0,
+        score: 0,
         fails: 0,
     },
     {
         name: 'juventus',
-        points: 0,
+        score: 0,
         fails: 0,
     },
     {
         name: 'Milan',
-        points: 0,
+        score: 0,
         fails: 0,
     },
     {
         name: 'Inter',
-        points: 0,
+        score: 0,
         fails: 0,
     }
 ];
+
+// Creo funzione per generare numeri casuali
+const randomNumbers = (max) => {
+    const numbers = Math.floor(Math.random() * max) + 1;
+    return numbers;
+}
+
+// const guestsList = guests.map((guest, i) => ({ guest, table, place: i + 1 }));
+
+const actualScore = footballTeams.map(teamScore => teamScore.score = randomNumbers(100));
+
+const actualFails = footballTeams.map(teamFails => teamFails.fails = randomNumbers(15));
+
+console.log(footballTeams);
