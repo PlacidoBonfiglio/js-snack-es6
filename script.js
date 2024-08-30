@@ -1,98 +1,30 @@
 // ! -------------------- SNACK 1 ----------------------
 
-console.log('-----------  SNACK 1  ------------');
+console.log('-----------------  SNACK 1  ------------------');
 
 const guests = [
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Brad Pitt',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Johnny Depp',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Lady Gaga',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Cristiano Ronaldo',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Georgina Rodriguez',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Chiara Ferragni',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'George Clooney',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Amal Clooney',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Fedez',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Amadeus',
-        seatOccupied: 0,
-    },
-    {
-        tableName: 'Tavolo Vip',
-        name: 'Fiorello',
-        seatOccupied: 0,
-    }
+    'Brad Pitt',
+    'Johnny Depp',
+    'Lady Gaga',
+    'Cristiano Ronaldo',
+    'Georgina Rodriguez',
+    'Chiara Ferragni',
+    'George Clooney',
+    'Amal Clooney',
+    'Fedez',
+    'Amadeus',
+    'Fiorello'
 ];
 
-// Creo una funzione che genera numeri casuali sempre diversi
-const createRandomNumbers = (max, totalNumbers) => {
-    const randomNumbers = [];
+const table = 'Tavolo Vip';
 
-    // Ciclo while poiché dovrò pescare più volte il numero casuale per non avere doppioni
-    while (randomNumbers.length < totalNumbers) {
-        const randomNumber = Math.floor(Math.random() * max) + 1;
+const guestsList = guests.map((guest, i) => ({ guest, table, place: i + 1 }));
 
-        // Controllo se il numero creato è già nell'array. Se si, genero altri numeri
-        if (!randomNumbers.includes(randomNumber)) {
-            randomNumbers.push(randomNumber);
-        }
-    }
-    return randomNumbers;
-}
-
-const seatNumber = createRandomNumbers(11, 11);
-console.log(seatNumber);
-
-
-let i = 1;
-
-const placeholder = guests.forEach(seat => {
-    seat.seatOccupied = seatNumber[i];
-    i++;
-})
-
-console.log(guests);
-
+console.log(guestsList);
 
 // ! -------------------- SNACK 2 ----------------------
 
-console.log('-----------  SNACK 2  ------------');
+console.log('-----------------  SNACK 2  ------------------');
 
 const students = [
     {
@@ -143,3 +75,27 @@ console.log('Grades Over 70', gradesOver70);
 // Controllo se gli studenti con grades over 70 hanno anche un id superiore a 120
 const gradesOver70IdOver120 = gradesOver70.filter(studentId => studentId.id > 120);
 console.log('Students grades over 70 and id over 120', gradesOver70IdOver120);
+
+
+// ! -------------------- SNACK 3 ----------------------
+
+console.log('-----------------  SNACK 3  ------------------');
+
+const bicycles = [
+    {
+        name: Bianchi,
+        weight: 6,
+    },
+    {
+        name: Atala,
+        weight: 8,
+    },
+    {
+        name: Olmo,
+        weight: 9,
+    },
+    {
+        name: Cervelo,
+        weight: 7,
+    }
+];
