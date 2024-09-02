@@ -100,15 +100,16 @@ const bicycles = [
     }
 ];
 
+let lightestBike = bicycles[0];
+
 // Prendo il peso di ogni bicicletta
-const bicycleWeight = bicycles.map(bike => bike.weight);
-console.log('Bicycle weight', bicycleWeight);
+bicycles.forEach((bike) => {
+    if (bike.weight < lightestBike.weight) {
+        lightestBike = bike;
+    }
+})
 
-// Controllo quale sia il peso più basso
-const lighterBicycle = Math.min(...bicycleWeight);
-console.log(lighterBicycle);
-
-// Stampare in console la bici con peso minore utilizzando destructuring e template literal
+console.log(`La bicicletta più leggere è ${lightestBike.name}, che pesa ${lightestBike.weight}`);
 
 
 
@@ -158,3 +159,80 @@ const teamsAndFails = footballTeams.reduce((result, team) => {
 }, []);
 console.log(teamsAndFails);
 
+
+// ! -------------------- SNACK 5 ----------------------
+
+console.log('-----------------  SNACK 5  ------------------');
+
+const disneyNames = ['Pippo', 'PLUTO', 'Paperino'];
+
+const formattedNames = disneyNames.map((element) => {
+    return element.charAt(0).toUpperCase() + element.substring(1).toLowerCase(1);
+})
+
+console.log(formattedNames);
+
+
+// ! -------------------- SNACK 6 ----------------------
+
+console.log('-----------------  SNACK 6  ------------------');
+
+const animals = [
+    { nome: 'leone', famiglia: 'felidi', classe: 'mammiferi' },
+    { nome: 'cane', famiglia: 'canidi', classe: 'mammiferi' },
+    { nome: 'gallina', famiglia: 'fasianidi', classe: 'uccelli' },
+    { nome: 'topo', famiglia: 'fasianidi', classe: 'mammiferi' },
+    { nome: 'lontra', famiglia: 'fasianidi', classe: 'mammiferi' },
+    { nome: 'serpente', famiglia: 'fasianidi', classe: 'rettili' },
+    { nome: 'rana', famiglia: 'fasianidi', classe: 'anfibi' },
+    { nome: 'elefante', famiglia: 'fasianidi', classe: 'mammiferi' },
+    { nome: 'ippopotamo', famiglia: 'fasianidi', classe: 'mammiferi' },
+    { nome: 'tigre', famiglia: 'felidi', classe: 'mammiferi' },
+];
+
+const mammalAnimals = animals.filter((animal) => animal.classe === 'mammiferi')
+console.log(mammalAnimals);
+
+
+// ! -------------------- SNACK 7 ----------------------
+
+console.log('-----------------  SNACK 7  ------------------');
+
+const people = [
+    {
+        firstName: 'Marco',
+        lastName: 'Bianchi',
+        age: 32,
+    },
+    {
+        firstName: 'Giovanni',
+        lastName: 'Simoncelli',
+        age: 17,
+    },
+    {
+        firstName: 'Ludovica',
+        lastName: 'Bassi',
+        age: 26,
+    },
+    {
+        firstName: 'Francesco',
+        lastName: 'Rossi',
+        age: 16,
+    },
+    {
+        firstName: 'Andrea',
+        lastName: 'Tommasini',
+        age: 21,
+    },
+];
+
+const canDrive = people.map((element) => {
+    const { firstName, lastName, age } = element;
+    if (age < 18) {
+        { firstName, lastName, age } 'non può guidare perché ha {}';
+    } else {
+        { firstName, lastName, age } 'può guidare';
+    }
+})
+
+console.log(canDrive);
