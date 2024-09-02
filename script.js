@@ -228,11 +228,8 @@ const people = [
 
 const canDrive = people.map((element) => {
     const { firstName, lastName, age } = element;
-    if (age < 18) {
-        { firstName, lastName, age } 'non può guidare perché ha {}';
-    } else {
-        { firstName, lastName, age } 'può guidare';
-    }
+
+    return `${firstName} ${lastName} ${(age < 18) ? 'Essendo minorenne non può guidare' : 'Essendo maggiorenne può guidare'}`;
 })
 
 console.log(canDrive);
